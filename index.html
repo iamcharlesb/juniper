@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html ng-app="QueryGenApp" lang="en">
+    <head >
+        <link rel="stylesheet" href="assets/css/fonts.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/partial.css" />
+        <link rel="stylesheet" href="assets/css/common/jundropdown.css" />
+        <link rel="stylesheet" href="assets/css/common/junbutton.css" />
+        <link rel="stylesheet" href="assets/css/common/juninp.css" />
+        <link rel="stylesheet" href="assets/css/modules/queryfrm/index.css" />
+    </head>
+    <body>
+
+        <div id="container">
+            
+            <header>
+                <nav class="util-container-center">
+                    <a href="#" class="logo">
+                        <picture><img src="assets/img/logo.svg" /></picture>
+                    </a>
+                </nav>
+            </header>
+
+            <main>
+
+                <div ng-include="'app/modules/queryfrm/queryfrmTpl.html'"></div>
+                
+            </main>
+
+            <footer>
+                <div class="util-container-center">
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="assets/js/vendor/angular/angular.min.1.6.1.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/modules/queryfrm/queryfrmCtrl.js"></script>
+        <script src="app/common/dropdown/junDropDown.js"></script>
+        <script src="app/common/addmore/junAddMore.js"></script>
+
+    </body>
+</html>

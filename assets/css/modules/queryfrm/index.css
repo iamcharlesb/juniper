@@ -1,0 +1,39 @@
+.page-search--desc {
+ font-size: 12px;
+ margin-bottom: 10px;
+}
+
+.page-search--where {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.page-search--where > div {
+    margin-bottom: 20px;
+}
+
+.page-search--select  > div .jun-dropdown:first-child, .page-search--where > div .jun-dropdown:first-child {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.page-search--where-add, .page-search--where-remove {
+    padding-top: 0px;
+    font-size: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/** Feature - Display the Add Button for the last row alone */
+.page-search--where .page-search--where-add {
+    display: none;
+}
+
+.page-search--where > div:last-child .page-search--where-add {
+    display: inline-block;
+}
+
+.page-section--result {
+    margin-top: 20px;
+}
+/** End of Feature - Display the Add Button for the last row alone */

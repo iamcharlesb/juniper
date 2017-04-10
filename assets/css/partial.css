@@ -1,0 +1,24 @@
+/** Header Section */
+header {
+    background: #fff;
+    height: 77px;
+}
+
+    header a.logo {
+        background: #3493c1;
+        display: inline-block;
+        height: inherit;
+        position: relative;
+        z-index: 1;
+        padding: 19px;
+    }
+
+        header a.logo img {
+            width: 139px;
+            height: 35px;
+        }
+
+/** Footer Section */
+footer {
+    background: #efefef;
+}

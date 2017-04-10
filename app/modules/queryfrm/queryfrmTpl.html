@@ -1,0 +1,40 @@
+<section class="page-search util-container-center" >
+
+    <h1 class="banner-title">
+        Search Query Generator
+    </h1>
+
+    <div class="section--content" ng-controller="HomeCtrl as HomeObj">
+
+        <p class="page-search--desc">A simple form to Generate Query</p>
+
+        <div class="page-search--select">
+            <h2>Select</h2>
+            <div id="select"><jun-dropdown options="HomeObj.fields" append="true" remove-selected="true" class="select-fields"></jun-dropdown></div>
+        </div>
+        
+        <div id="page-search--where" class="page-search--where">
+            <h2>Where</h2>
+            <div class="page-search--where-row">
+                <jun-dropdown options="HomeObj.fields" class="fields"></jun-dropdown>
+                <jun-dropdown options="HomeObj.operators" class="operators" ></jun-dropdown>
+                <input type="text" name="" value="" class="jun--inp input" />
+                <jun-dropdown options="HomeObj.conditions" class="conditions" ></jun-dropdown>
+                <button class="jun--button page-search--where-add" jun-add-more parent="page-search--where" controller-obj="HomeObj"> + </button>
+            </div>  
+        </div>
+
+            <div class="section--btn">
+            <button class="jun--button" ng-click="HomeObj.generateQuery()">Generate Query</button>
+            </div>
+
+            <div class="page-section--result">
+                <h2>Result</h2>
+                <pre id="section--result">
+                    <p class="page-search--desc">Click Generate Button to Build the Query</p>
+                </pre>
+            </div>
+
+    </div>
+
+</section>

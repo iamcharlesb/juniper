@@ -1,0 +1,15 @@
+.jun--button {
+    border: 1px solid #3493c1;
+    border-radius: 2px;
+    background: #3493c1;
+    color: #fff;
+    display: inline-block;
+    height: 32px;
+    padding: 5px;
+    text-align: center;
+    max-width: 150px;
+    font-size: 13px;
+    vertical-align: top;
+    outline: none;
+    -webkit-outline: none;
+}
